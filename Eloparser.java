@@ -183,7 +183,7 @@ public class Eloparser {
     for (String filename : filenames) {
       List<String> items = new ArrayList<>();
       try {
-        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "UTF-8"));
+        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(filename), "ISO-8859-1"));
         StringBuilder sb = new StringBuilder();
         String line = br.readLine();
         while (line != null) {
